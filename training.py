@@ -11,7 +11,7 @@ import tensorflow as tf
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, Dropout, Flatten, MaxPooling2D
 
-parent_folder="/home/nitish/PycharmProjects/AudioMNIST/recordings/"  # Replace with the path depending on your own file system
+parent_folder="/home/nitish/PycharmProjects/AudioMNIST/data/"  # Replace with the path to the sound recordings depending on your own file system
 
 
 input_shape = (100, 101, 1)
@@ -60,14 +60,4 @@ for epoch in range(N_epochs):
 model.save(parent_folder+"AudioDigiNet.h5")
 
 
-'''
-    f=list(range(100))
-    t=list(range(101))
-    plt.figure(figsize=(10, 6))
-    ax = plt.axes()
-    # Setting the background color
-    ax.set_facecolor("white")
-    plt.pcolormesh(t, f, x_train[0])
-    plt.show()
-'''
 
