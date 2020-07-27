@@ -12,7 +12,7 @@ import csv
 
 
 
-parent_folder="/home/nitish/PycharmProjects/AudioMNIST/recordings/"  # Replace with the path depending on your own file system
+parent_folder="/home/nitish/PycharmProjects/AudioMNIST/data/"  # Replace with the path to the sound recordings depending on your own file system
 
 for folder_iter in range(60):
     which_folder="0"+str(folder_iter+1)
