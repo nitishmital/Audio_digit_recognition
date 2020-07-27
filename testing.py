@@ -12,7 +12,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Conv2D, Dropout, Flatten, MaxPooling2D
 
 
-parent_folder="/home/nitish/PycharmProjects/AudioMNIST/recordings/"  # Replace with the path depending on your own file system
+parent_folder="/home/nitish/PycharmProjects/AudioMNIST/data/"  # Replace with the path to the sound recordings depending on your own file system
 model = tf.keras.models.load_model(parent_folder+"AudioDigiNet.h5")
 accuracy=0
 for iter in range(10):  # Iterate with mini batches 10 times
